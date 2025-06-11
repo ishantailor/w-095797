@@ -5,20 +5,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-import FireCatProject from "./pages/FireCatProject";
-import SportRetailProject from "./pages/SportRetailProject";
-import WorkwearProject from "./pages/WorkwearProject";
-import HockeyProject from "./pages/HockeyProject";
-import PetProject from "./pages/PetProject";
-import TechDetails from "./pages/TechDetails";
-import DevelopmentProcess from "./pages/DevelopmentProcess";
+import Home from "./pages/Home";
 import About from "./pages/About";
-import Careers from "./pages/Careers";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Blog from "./pages/Blog";
-import BlogPostDetail from "./pages/BlogPostDetail";
+import Products from "./pages/Products";
+import Offers from "./pages/Offers";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -30,19 +23,12 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects/firecat" element={<FireCatProject />} />
-            <Route path="/projects/sport-retail" element={<SportRetailProject />} />
-            <Route path="/projects/workwear" element={<WorkwearProject />} />
-            <Route path="/projects/hockey" element={<HockeyProject />} />
-            <Route path="/projects/pet-tracker" element={<PetProject />} />
-            <Route path="/tech-details" element={<TechDetails />} />
-            <Route path="/development-process" element={<DevelopmentProcess />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPostDetail />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/offers" element={<Offers />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
