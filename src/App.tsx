@@ -8,6 +8,8 @@ import { useState } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import ProductCategory from "./pages/ProductCategory";
+import BrandProducts from "./pages/BrandProducts";
 import Offers from "./pages/Offers";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -26,6 +28,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:category" element={<ProductCategory />} />
+            <Route path="/products/:category/:brand" element={<BrandProducts />} />
             <Route path="/offers" element={<Offers />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
