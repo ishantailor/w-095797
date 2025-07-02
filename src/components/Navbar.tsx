@@ -50,12 +50,6 @@ const Navbar = () => {
                 Offers
               </Link>
               <Link
-                to="/gallery"
-                className="text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-              >
-                Gallery
-              </Link>
-              <Link
                 to="/contact"
                 className="text-slate-300 hover:text-white hover:bg-slate-700 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
               >
@@ -116,13 +110,6 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(false)}
           >
             Offers
-          </Link>
-          <Link
-            to="/gallery"
-            className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Gallery
           </Link>
           <Link
             to="/contact"

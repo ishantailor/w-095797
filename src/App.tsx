@@ -11,7 +11,6 @@ import Products from "./pages/Products";
 import ProductCategory from "./pages/ProductCategory";
 import BrandProducts from "./pages/BrandProducts";
 import Offers from "./pages/Offers";
-import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -31,7 +30,6 @@ const App = () => {
             <Route path="/products/:category" element={<ProductCategory />} />
             <Route path="/products/:category/:brand" element={<BrandProducts />} />
             <Route path="/offers" element={<Offers />} />
-            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
