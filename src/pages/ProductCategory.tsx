@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -42,6 +41,123 @@ const ProductCategory = () => {
         { id: 'corsair', name: 'Corsair', logo: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=200&h=100&fit=crop' },
         { id: 'gskill', name: 'G.Skill', logo: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=200&h=100&fit=crop' },
         { id: 'asus', name: 'ASUS', logo: 'https://images.unsplash.com/photo-1541807084-5b52b6ee0547?w=200&h=100&fit=crop' }
+      ]
+    },
+    printers: {
+      name: 'Printers',
+      description: 'Inkjet and laser printers for home and office use',
+      brands: [
+        { id: 'hp', name: 'HP', logo: 'https://images.unsplash.com/photo-1611078489935-0cb964de46d6?w=200&h=100&fit=crop' },
+        { id: 'canon', name: 'Canon', logo: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=200&h=100&fit=crop' },
+        { id: 'epson', name: 'Epson', logo: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=200&h=100&fit=crop' },
+        { id: 'brother', name: 'Brother', logo: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=200&h=100&fit=crop' },
+        { id: 'samsung', name: 'Samsung', logo: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=200&h=100&fit=crop' },
+        { id: 'xerox', name: 'Xerox', logo: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=200&h=100&fit=crop' }
+      ]
+    },
+    storage: {
+      name: 'Storage Solutions',
+      description: 'SSDs, HDDs, and external storage devices',
+      brands: [
+        { id: 'samsung', name: 'Samsung', logo: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16c?w=200&h=100&fit=crop' },
+        { id: 'wd', name: 'Western Digital', logo: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16c?w=200&h=100&fit=crop' },
+        { id: 'seagate', name: 'Seagate', logo: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16c?w=200&h=100&fit=crop' },
+        { id: 'crucial', name: 'Crucial', logo: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16c?w=200&h=100&fit=crop' },
+        { id: 'kingston', name: 'Kingston', logo: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16c?w=200&h=100&fit=crop' },
+        { id: 'sandisk', name: 'SanDisk', logo: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16c?w=200&h=100&fit=crop' },
+        { id: 'toshiba', name: 'Toshiba', logo: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16c?w=200&h=100&fit=crop' }
+      ]
+    },
+    networking: {
+      name: 'Networking Equipment',
+      description: 'Routers, switches, and WiFi equipment',
+      brands: [
+        { id: 'tplink', name: 'TP-Link', logo: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=200&h=100&fit=crop' },
+        { id: 'netgear', name: 'Netgear', logo: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=200&h=100&fit=crop' },
+        { id: 'dlink', name: 'D-Link', logo: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=200&h=100&fit=crop' },
+        { id: 'linksys', name: 'Linksys', logo: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=200&h=100&fit=crop' },
+        { id: 'asus', name: 'ASUS', logo: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=200&h=100&fit=crop' },
+        { id: 'cisco', name: 'Cisco', logo: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=200&h=100&fit=crop' },
+        { id: 'ubiquiti', name: 'Ubiquiti', logo: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=200&h=100&fit=crop' }
+      ]
+    },
+    monitors: {
+      name: 'Monitors',
+      description: 'Gaming, professional, and ultrawide monitors',
+      brands: [
+        { id: 'lg', name: 'LG', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' },
+        { id: 'samsung', name: 'Samsung', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' },
+        { id: 'acer', name: 'Acer', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' },
+        { id: 'asus', name: 'ASUS', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' },
+        { id: 'dell', name: 'Dell', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' },
+        { id: 'hp', name: 'HP', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' },
+        { id: 'msi', name: 'MSI', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' },
+        { id: 'benq', name: 'BenQ', logo: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&h=100&fit=crop' }
+      ]
+    },
+    peripherals: {
+      name: 'Keyboards & Mice',
+      description: 'Mechanical keyboards, gaming mice, and wireless combos',
+      brands: [
+        { id: 'logitech', name: 'Logitech', logo: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=100&fit=crop' },
+        { id: 'corsair', name: 'Corsair', logo: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=100&fit=crop' },
+        { id: 'razer', name: 'Razer', logo: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=100&fit=crop' },
+        { id: 'steelseries', name: 'SteelSeries', logo: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=100&fit=crop' },
+        { id: 'hyperx', name: 'HyperX', logo: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=100&fit=crop' },
+        { id: 'roccat', name: 'Roccat', logo: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=100&fit=crop' },
+        { id: 'coolermaster', name: 'Cooler Master', logo: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=200&h=100&fit=crop' }
+      ]
+    },
+    gaming: {
+      name: 'Gaming Accessories',
+      description: 'Controllers, headsets, gaming chairs, and streaming equipment',
+      brands: [
+        { id: 'steelseries', name: 'SteelSeries', logo: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=200&h=100&fit=crop' },
+        { id: 'razer', name: 'Razer', logo: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=200&h=100&fit=crop' },
+        { id: 'hyperx', name: 'HyperX', logo: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=200&h=100&fit=crop' },
+        { id: 'corsair', name: 'Corsair', logo: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=200&h=100&fit=crop' },
+        { id: 'logitech', name: 'Logitech G', logo: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=200&h=100&fit=crop' },
+        { id: 'astro', name: 'Astro Gaming', logo: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=200&h=100&fit=crop' },
+        { id: 'elgato', name: 'Elgato', logo: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=200&h=100&fit=crop' }
+      ]
+    },
+    cables: {
+      name: 'Cables & Connectors',
+      description: 'HDMI, USB, power cables, and adapters',
+      brands: [
+        { id: 'amazonbasics', name: 'Amazon Basics', logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=100&fit=crop' },
+        { id: 'belkin', name: 'Belkin', logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=100&fit=crop' },
+        { id: 'anker', name: 'Anker', logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=100&fit=crop' },
+        { id: 'ugreen', name: 'UGREEN', logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=100&fit=crop' },
+        { id: 'cable-matters', name: 'Cable Matters', logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=100&fit=crop' },
+        { id: 'startech', name: 'StarTech', logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=100&fit=crop' }
+      ]
+    },
+    projectors: {
+      name: 'Projectors',
+      description: 'Business presentation and home theater projectors',
+      brands: [
+        { id: 'epson', name: 'Epson', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop' },
+        { id: 'benq', name: 'BenQ', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop' },
+        { id: 'viewsonic', name: 'ViewSonic', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop' },
+        { id: 'lg', name: 'LG', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop' },
+        { id: 'optoma', name: 'Optoma', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop' },
+        { id: 'sony', name: 'Sony', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop' },
+        { id: 'acer', name: 'Acer', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop' }
+      ]
+    },
+    audio: {
+      name: 'Speakers & Audio',
+      description: 'Desktop speakers, headphones, microphones, and audio equipment',
+      brands: [
+        { id: 'jbl', name: 'JBL', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' },
+        { id: 'creative', name: 'Creative', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' },
+        { id: 'logitech', name: 'Logitech', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' },
+        { id: 'sony', name: 'Sony', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' },
+        { id: 'bose', name: 'Bose', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' },
+        { id: 'sennheiser', name: 'Sennheiser', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' },
+        { id: 'audio-technica', name: 'Audio-Technica', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' },
+        { id: 'yamaha', name: 'Yamaha', logo: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=200&h=100&fit=crop' }
       ]
     }
   };
